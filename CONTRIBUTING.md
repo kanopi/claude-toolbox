@@ -1,6 +1,6 @@
-# Contributing to Kanopi Claude Code Plugins
+# Contributing to Claude Toolbox
 
-Thank you for your interest in contributing to Kanopi's Claude Code plugins marketplace!
+Thank you for your interest in contributing to Kanopi's Claude Code toolbox!
 
 ## How to Contribute
 
@@ -17,7 +17,7 @@ Thank you for your interest in contributing to Kanopi's Claude Code plugins mark
 
 ### Submitting a New Plugin
 
-To add a new plugin to the Kanopi marketplace:
+To add a new plugin to the Claude Toolbox marketplace:
 
 1. **Develop your plugin** following the [Claude Code plugin structure](https://docs.claude.com/en/docs/claude-code/plugins)
 
@@ -36,7 +36,7 @@ To add a new plugin to the Kanopi marketplace:
    }
    ```
 
-3. **Update marketplace.json** to include your plugin in the `plugins` array
+3. **Update .claude-plugin/marketplace.json** to include your plugin in the `plugins` array
 
 4. **Update README.md** with plugin information
 
@@ -48,7 +48,7 @@ To add a new plugin to the Kanopi marketplace:
 
 ### Plugin Requirements
 
-All plugins in the Kanopi marketplace must:
+All plugins in the Claude Toolbox marketplace must:
 
 - ✅ Follow Claude Code plugin conventions
 - ✅ Include comprehensive documentation

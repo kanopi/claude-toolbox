@@ -1,41 +1,39 @@
-# Installing from Kanopi Claude Plugins Marketplace
+# Installing from Claude Toolbox
 
 ## Quick Start
 
-### Step 1: Add the Kanopi Marketplace
+### Step 1: Open Claude Code
 
-```bash
-claude plugins marketplace add kanopi-claude-plugins https://github.com/kanopi/kanopi-claude-plugins
-```
-
-### Step 2: List Available Plugins
-
-```bash
-claude plugins marketplace list kanopi-claude-plugins
-```
-
-### Step 3: Install CMS Cultivator
-
-```bash
-claude plugins install kanopi-claude-plugins/cms-cultivator
-```
-
-### Step 4: Verify Installation
-
-```bash
-claude plugins list
-```
-
-You should see `cms-cultivator` in the list of installed plugins.
-
-### Step 5: Start Using Commands
-
-Open Claude Code in your project:
+Navigate to your project and start Claude Code:
 
 ```bash
 cd /path/to/your/drupal-or-wordpress-project
 claude
 ```
+
+### Step 2: Add the Claude Toolbox Marketplace
+
+Inside Claude Code CLI:
+
+```bash
+/plugin marketplace add kanopi/claude-toolbox
+```
+
+### Step 3: Install CMS Cultivator
+
+```bash
+/plugin install cms-cultivator@claude-toolbox
+```
+
+### Step 4: Verify Installation
+
+```bash
+/plugin
+```
+
+Select "Manage Plugins" to see `cms-cultivator` in your installed plugins list.
+
+### Step 5: Start Using Commands
 
 Try some commands:
 
@@ -50,8 +48,10 @@ Try some commands:
 
 ### Direct from GitHub (Without Marketplace)
 
+Inside Claude Code CLI:
+
 ```bash
-claude plugins install https://github.com/kanopi/cms-cultivator
+/plugin install https://github.com/kanopi/cms-cultivator
 ```
 
 ### Manual Installation
@@ -59,15 +59,22 @@ claude plugins install https://github.com/kanopi/cms-cultivator
 ```bash
 cd ~/.config/claude/plugins
 git clone https://github.com/kanopi/cms-cultivator.git
-claude plugins enable cms-cultivator
+```
+
+Then inside Claude Code CLI:
+
+```bash
+/plugin enable cms-cultivator
 ```
 
 ## Updating Plugins
 
 ### Update from Marketplace
 
+Inside Claude Code CLI:
+
 ```bash
-claude plugins update kanopi-claude-plugins/cms-cultivator
+/plugin update cms-cultivator@claude-toolbox
 ```
 
 ### Update Manual Installation
@@ -83,15 +90,15 @@ git pull origin main
 
 If you get an error that the marketplace is not found:
 
-1. Verify the marketplace URL is correct:
+1. Verify the marketplace file exists:
    ```bash
-   curl https://raw.githubusercontent.com/kanopi/kanopi-claude-plugins/main/marketplace.json
+   curl https://raw.githubusercontent.com/kanopi/claude-toolbox/main/.claude-plugin/marketplace.json
    ```
 
-2. Re-add the marketplace:
+2. Re-add the marketplace inside Claude Code CLI:
    ```bash
-   claude plugins marketplace remove kanopi-claude-plugins
-   claude plugins marketplace add kanopi-claude-plugins https://github.com/kanopi/kanopi-claude-plugins
+   /plugin marketplace remove claude-toolbox
+   /plugin marketplace add kanopi/claude-toolbox
    ```
 
 ### Plugin Not Installing
@@ -106,23 +113,25 @@ If the plugin fails to install:
 
 If commands are not available after installation:
 
-1. Verify the plugin is enabled:
+1. Verify the plugin is enabled inside Claude Code CLI:
    ```bash
-   claude plugins list
+   /plugin
    ```
 
-2. If not enabled, enable it:
+2. Select "Manage Plugins" and ensure `cms-cultivator` is enabled
+
+3. If not enabled, enable it:
    ```bash
-   claude plugins enable cms-cultivator
+   /plugin enable cms-cultivator
    ```
 
-3. Restart Claude Code
+4. Restart Claude Code
 
 ## Support
 
 - **Issues:** [GitHub Issues](https://github.com/kanopi/cms-cultivator/issues)
 - **Documentation:** [https://kanopi.github.io/cms-cultivator/](https://kanopi.github.io/cms-cultivator/)
-- **Marketplace Issues:** [GitHub Issues](https://github.com/kanopi/kanopi-claude-plugins/issues)
+- **Marketplace Issues:** [GitHub Issues](https://github.com/kanopi/claude-toolbox/issues)
 
 ---
 

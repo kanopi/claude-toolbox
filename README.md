@@ -1,28 +1,32 @@
-# Kanopi Claude Plugins
+# Claude Toolbox
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
 
-This marketplace provides curated Claude Code plugins from Kanopi Studios.
+A curated toolbox of Claude Code resources from Kanopi Studios for CMS development.
 
 ## Installation
 
-### Add the Kanopi Marketplace
+### Add the Marketplace
+
+Inside Claude Code CLI:
 
 ```bash
-claude plugins marketplace add kanopi-claude-plugins https://github.com/kanopi/kanopi-claude-plugins
+/plugin marketplace add kanopi/claude-toolbox
 ```
 
 ### Install a Plugin
 
 ```bash
-claude plugins install kanopi-claude-plugins/<plugin-name>
+/plugin install cms-cultivator@claude-toolbox
 ```
 
 ### List Available Plugins
 
 ```bash
-claude plugins marketplace list kanopi-claude-plugins
+/plugin
 ```
+
+Then select "Browse Plugins" to see all available tools.
 
 ## Available Plugins
 
@@ -41,7 +45,7 @@ Comprehensive workflow commands for Drupal and WordPress development.
 
 **Installation:**
 ```bash
-claude plugins install kanopi-claude-plugins/cms-cultivator
+/plugin install cms-cultivator@claude-toolbox
 ```
 
 **Documentation:** [https://kanopi.github.io/cms-cultivator/](https://kanopi.github.io/cms-cultivator/)

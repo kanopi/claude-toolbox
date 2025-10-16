@@ -1,19 +1,18 @@
 {
-  "name": "kanopi-claude-plugins",
-  "displayName": "Kanopi Claude Code Plugins",
-  "description": "Official Claude Code plugins from Kanopi Studios Content Management System (CMS) development",
+  "name": "claude-toolbox",
+  "displayName": "Claude Toolbox",
+  "description": "Official Claude Code toolbox from Kanopi Studios for Content Management System (CMS) development",
   "version": "1.0.0",
-  "publisher": "Kanopi Studios",
-  "author": {
+  "owner": {
     "name": "Kanopi Studios",
     "email": "code@kanopi.com",
     "url": "https://kanopi.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kanopi/kanopi-claude-plugins"
+    "url": "https://github.com/kanopi/claude-toolbox"
   },
-  "homepage": "https://github.com/kanopi/kanopi-claude-plugins",
+  "homepage": "https://github.com/kanopi/claude-toolbox",
   "license": "GPL-2.0-or-later",
   "plugins": [
     {
@@ -21,7 +20,10 @@
       "displayName": "CMS Cultivator",
       "description": "Comprehensive workflow commands for Drupal and WordPress development",
       "version": "0.1.0",
-      "source": "https://github.com/kanopi/cms-cultivator",
+      "source": {
+        "source": "github",
+        "repo": "kanopi/cms-cultivator"
+      },
       "homepage": "https://kanopi.github.io/cms-cultivator/",
       "categories": ["Development", "Quality Assurance", "Security", "Accessibility", "Performance"],
       "keywords": ["Drupal", "WordPress", "cms", "accessibility", "performance", "ddev"]
