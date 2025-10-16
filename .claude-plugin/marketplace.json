@@ -17,7 +17,6 @@
   "plugins": [
     {
       "name": "cms-cultivator",
-      "displayName": "CMS Cultivator",
       "description": "Comprehensive workflow commands for Drupal and WordPress development",
       "version": "0.1.0",
       "source": {
@@ -25,7 +24,6 @@
         "repo": "kanopi/cms-cultivator"
       },
       "homepage": "https://kanopi.github.io/cms-cultivator/",
-      "categories": ["Development", "Quality Assurance", "Security", "Accessibility", "Performance"],
       "keywords": ["Drupal", "WordPress", "cms", "accessibility", "performance", "ddev"]
     }
   ]
