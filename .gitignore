@@ -16,3 +16,6 @@ node_modules/
 
 # OS generated files
 Thumbs.db
+
+# Claude
+.claude/settings.local.json
