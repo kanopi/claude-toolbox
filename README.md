@@ -52,6 +52,28 @@ Comprehensive workflow commands for Drupal and WordPress development.
 
 **Repository:** [https://github.com/kanopi/cms-cultivator](https://github.com/kanopi/cms-cultivator)
 
+---
+
+### 📊 Claude Dev Insights
+
+Comprehensive developer analytics and productivity insights for Claude Code.
+
+**Features:**
+- 📊 Session Analytics - Track 21+ data points per session (duration, tokens, costs, tools)
+- 🔒 Security Scanner - Block sensitive file access and dangerous commands
+- 💰 Cost Guard - Session budget tracking and real-time cost alerts
+- ✅ Quality Automator - Auto-run linters and enforce commit message standards
+- ☁️ Google Sheets Integration - Optional cloud sync for team sharing
+
+**Installation:**
+```bash
+/plugin install claude-dev-insights@claude-toolbox
+```
+
+**Documentation:** [https://kanopi.github.io/claude-dev-insights/](https://kanopi.github.io/claude-dev-insights/)
+
+**Repository:** [https://github.com/kanopi/claude-dev-insights](https://github.com/kanopi/claude-dev-insights)
+
 ## Requirements
 
 - [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) installed
