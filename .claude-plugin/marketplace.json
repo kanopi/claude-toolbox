@@ -27,15 +27,15 @@
       "keywords": ["Drupal", "WordPress", "cms", "accessibility", "performance", "ddev"]
     },
     {
-      "name": "training-video-generator",
-      "description": "Automated training video creation from documentation with AI-generated scripts, terminal automation, and TTS narration. Generate beat-by-beat video scripts, automate screen recordings, create TTS audio, and merge into professional training videos for any project.",
-      "version": "0.1.1",
+      "name": "claude-dev-insights",
+      "description": "Comprehensive developer analytics and productivity insights for Claude Code. Automatically tracks session analytics, enforces security policies, guards against cost overruns, and ensures code quality with 4 intelligent hooks: SessionEnd, SessionStart, PreToolUse, and PostToolUse.",
+      "version": "1.0.0",
       "source": {
         "source": "github",
-        "repo": "kanopi/training-video-generator"
+        "repo": "kanopi/claude-dev-insights"
       },
-      "homepage": "https://kanopi.github.io/training-video-generator/",
-      "keywords": ["video", "training", "automation", "tts", "test-to-speech"]
+      "homepage": "https://kanopi.github.io/claude-dev-insights/",
+      "keywords": ["analytics", "session-tracking", "cost-management", "security", "code-quality", "productivity", "developer-insights", "hooks"]
     }
   ]
 }
