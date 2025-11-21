@@ -74,6 +74,29 @@ Comprehensive developer analytics and productivity insights for Claude Code.
 
 **Repository:** [https://github.com/kanopi/claude-dev-insights](https://github.com/kanopi/claude-dev-insights)
 
+---
+
+### 📋 CMS Planner
+
+AI-powered project planning for web development. Generate comprehensive FRDs with story point estimates and Teamwork-ready CSV backlogs.
+
+**Features:**
+- 📋 Functional Requirements Documents - Executive summaries, technical specs, implementation plans
+- 📊 Story Point Estimation - Fibonacci sequence estimation (1-34+ points)
+- 📦 Teamwork Integration - CSV export with phase-based organization
+- 🏗️ Recipe-Based Architecture Support - Special handling for Drupal recipes
+- ⚠️ Risk Assessment - Technical and project risk identification
+- ✅ Success Criteria - Functional, technical, and business metrics
+
+**Installation:**
+```bash
+/plugin install cms-planner@claude-toolbox
+```
+
+**Documentation:** [https://kanopi.github.io/cms-planner/](https://kanopi.github.io/cms-planner/)
+
+**Repository:** [https://github.com/kanopi/cms-planner](https://github.com/kanopi/cms-planner)
+
 ## Requirements
 
 - [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) installed

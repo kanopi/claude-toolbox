@@ -36,6 +36,17 @@
       },
       "homepage": "https://kanopi.github.io/claude-dev-insights/",
       "keywords": ["analytics", "session-tracking", "cost-management", "security", "code-quality", "productivity", "developer-insights", "hooks"]
+    },
+    {
+      "name": "cms-planner",
+      "description": "AI-powered project planning for web development. Generate comprehensive Functional Requirements Documents (FRDs) with story point estimates, Teamwork-ready CSV backlogs, and implementation roadmaps. Perfect for Drupal, WordPress, and recipe-based architectures.",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "kanopi/cms-planner"
+      },
+      "homepage": "https://kanopi.github.io/cms-planner/",
+      "keywords": ["frd", "functional-requirements", "project-planning", "story-points", "agile", "scrum", "backlog", "teamwork", "drupal", "wordpress", "cms", "recipes", "architecture", "estimation", "documentation"]
     }
   ]
 }
