@@ -9,7 +9,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/kanopi/cms-cultivator.git",
-        "ref": "main"
+        "ref": "1.x"
       },
       "policy": {
         "installation": "AVAILABLE",

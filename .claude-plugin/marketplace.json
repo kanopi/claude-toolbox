@@ -18,7 +18,7 @@
     {
       "name": "cms-cultivator",
       "description": "Comprehensive workflow commands for Drupal and WordPress development",
-      "version": "0.1.0",
+      "version": "1.0.1",
       "source": {
         "source": "github",
         "repo": "kanopi/cms-cultivator"
