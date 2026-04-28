@@ -2,25 +2,25 @@
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
 
-A curated toolbox of Claude Code resources from Kanopi Studios for CMS development.
+A curated toolbox of AI coding assistant plugins from Kanopi Studios for CMS development. Works with Claude Code and OpenAI Codex.
 
 ## Installation
 
-### Add the Marketplace
+### Claude Code
 
-Inside Claude Code CLI:
+Add the marketplace:
 
 ```bash
 /plugin marketplace add kanopi/claude-toolbox
 ```
 
-### Install a Plugin
+Install a plugin:
 
 ```bash
 /plugin install cms-cultivator@claude-toolbox
 ```
 
-### List Available Plugins
+List available plugins:
 
 ```bash
 /plugin
@@ -28,25 +28,44 @@ Inside Claude Code CLI:
 
 Then select "Browse Plugins" to see all available tools.
 
+### OpenAI Codex
+
+Add the marketplace:
+
+```bash
+codex plugin marketplace add kanopi/claude-toolbox
+```
+
+Open the plugin browser and install:
+
+```bash
+codex/plugins
+```
+
+Browse to the plugin and select **Install plugin**.
+
 ## Available Plugins
 
 ### 🌱 CMS Cultivator
 
-Comprehensive workflow commands for Drupal and WordPress development.
+38 Agent Skills and 17 specialist agents for Drupal and WordPress development. Skills activate automatically from natural language, or invoke explicitly.
 
 **Features:**
-- 📝 PR Workflow (6 commands) - Generate descriptions, automate releases, manage documentation
-- ♿ Accessibility (5 commands) - WCAG 2.1 AA compliance audits and fixes
-- ⚡ Performance (5 commands) - Query optimization, asset analysis, bundle inspection
-- 🔒 Security (3 commands) - Dependency audits, vulnerability scanning, security reports
-- 🧪 Testing (3 commands) - Coverage analysis, report generation
-- ✨ Code Quality (2 commands) - Standards enforcement, automated fixes
-- 📚 Documentation (1 command) - Automated API documentation generation
+- 🔄 PR Workflow - Commit messages, PR descriptions, changelogs, code review
+- ♿ Accessibility - WCAG 2.1 AA compliance audits and fixes
+- ⚡ Performance - Core Web Vitals, query optimization, asset analysis
+- 🔒 Security - OWASP Top 10 scanning, dependency audits, vulnerability reports
+- 🧪 Testing - Test scaffolding, coverage analysis, QA test plans
+- ✨ Code Quality - Standards enforcement, technical debt assessment
+- 📚 Documentation - API docs, user guides, changelogs
+- 🎨 Design Workflow - Figma to WordPress blocks and Drupal paragraphs
 
-**Installation:**
+**Claude Code:**
 ```bash
 /plugin install cms-cultivator@claude-toolbox
 ```
+
+**OpenAI Codex:** Install via `codex/plugins` after adding this marketplace.
 
 **Documentation:** [https://kanopi.github.io/cms-cultivator/](https://kanopi.github.io/cms-cultivator/)
 
@@ -65,7 +84,7 @@ Comprehensive developer analytics and productivity insights for Claude Code.
 - ✅ Quality Automator - Auto-run linters and enforce commit message standards
 - ☁️ Google Sheets Integration - Optional cloud sync for team sharing
 
-**Installation:**
+**Claude Code:**
 ```bash
 /plugin install claude-dev-insights@claude-toolbox
 ```
@@ -88,7 +107,7 @@ AI-powered project planning for web development. Generate comprehensive FRDs wit
 - ⚠️ Risk Assessment - Technical and project risk identification
 - ✅ Success Criteria - Functional, technical, and business metrics
 
-**Installation:**
+**Claude Code:**
 ```bash
 /plugin install cms-planner@claude-toolbox
 ```
@@ -99,7 +118,7 @@ AI-powered project planning for web development. Generate comprehensive FRDs wit
 
 ## Requirements
 
-- [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) installed
+- [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) or [OpenAI Codex](https://openai.com/codex)
 - Git (for plugin installation)
 
 ## Support
@@ -115,8 +134,12 @@ We welcome contributions! Please see individual plugin repositories for contribu
 
 ### Adding a New Plugin to the Marketplace
 
-1. Ensure your plugin follows the [Claude Code plugin structure](https://docs.claude.com/en/docs/claude-code/plugins)
-2. Add your plugin metadata to `marketplace.json`
+1. Ensure your plugin follows the plugin structure for your target platform:
+   - [Claude Code plugin structure](https://docs.claude.com/en/docs/claude-code/plugins) — requires `.claude-plugin/plugin.json`
+   - [Codex plugin structure](https://developers.openai.com/codex/plugins/build) — requires `.codex-plugin/plugin.json`
+2. Add your plugin metadata to the appropriate marketplace file:
+   - Claude Code: `.claude-plugin/marketplace.json`
+   - Codex: `.agents/plugins/marketplace.json`
 3. Submit a pull request with:
    - Plugin description
    - Documentation link
@@ -131,4 +154,4 @@ GPL-2.0-or-later - see [LICENSE.md](LICENSE.md) file for details.
 
 [Kanopi Studios](https://kanopi.com) is a woman-owned web design, development, and support agency dedicated to helping you create the strongest possible connections between your content and your audiences.
 
-With concentrations in nonprofits, higher education, healthcare and corporate work, Kanopi works with a diverse group of organizations that strive to create a better digital world. Our holistic yet nimble approach allows us to jump in at any stage of your site’s lifecycle to help it achieve its full potential.
+With concentrations in nonprofits, higher education, healthcare and corporate work, Kanopi works with a diverse group of organizations that strive to create a better digital world. Our holistic yet nimble approach allows us to jump in at any stage of your site's lifecycle to help it achieve its full potential.
