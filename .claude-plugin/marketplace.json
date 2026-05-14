@@ -2,7 +2,7 @@
   "name": "claude-toolbox",
   "displayName": "Claude Toolbox",
   "description": "Official Claude Code toolbox from Kanopi Studios for Content Management System (CMS) development",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": {
     "name": "Kanopi Studios",
     "email": "code@kanopi.com",
@@ -17,14 +17,14 @@
   "plugins": [
     {
       "name": "cms-cultivator",
-      "description": "Comprehensive workflow commands for Drupal and WordPress development",
-      "version": "1.0.1",
+      "description": "46 auto-invoked skills and 15 specialist agents for Drupal and WordPress development. Includes PR workflows, accessibility / performance / security audits, design-to-code, Drupal.org contribution, Drupal/Pantheon DevOps, FRD generation with story points and CSV export, PM workflows (client triage, meeting prep, project heartbeats, QA review), and a strategist-focused UX audit covering all 21 Laws of UX.",
+      "version": "1.1.0",
       "source": {
         "source": "github",
         "repo": "kanopi/cms-cultivator"
       },
       "homepage": "https://kanopi.github.io/cms-cultivator/",
-      "keywords": ["Drupal", "WordPress", "cms", "accessibility", "performance", "ddev"]
+      "keywords": ["Drupal", "WordPress", "cms", "accessibility", "performance", "security", "ddev", "pr-workflow", "design-to-code", "figma", "frd", "story-points", "teamwork", "strategy", "ux-laws", "pm-workflows", "discovery"]
     },
     {
       "name": "claude-dev-insights",
@@ -36,17 +36,6 @@
       },
       "homepage": "https://kanopi.github.io/claude-dev-insights/",
       "keywords": ["analytics", "session-tracking", "cost-management", "security", "code-quality", "productivity", "developer-insights", "hooks"]
-    },
-    {
-      "name": "cms-planner",
-      "description": "AI-powered project planning for web development. Generate comprehensive Functional Requirements Documents (FRDs) with story point estimates, Teamwork-ready CSV backlogs, and implementation roadmaps. Perfect for Drupal, WordPress, and recipe-based architectures.",
-      "version": "0.1.0",
-      "source": {
-        "source": "github",
-        "repo": "kanopi/cms-planner"
-      },
-      "homepage": "https://kanopi.github.io/cms-planner/",
-      "keywords": ["frd", "functional-requirements", "project-planning", "story-points", "agile", "scrum", "backlog", "teamwork", "drupal", "wordpress", "cms", "recipes", "architecture", "estimation", "documentation"]
     }
   ]
 }

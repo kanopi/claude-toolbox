@@ -48,10 +48,10 @@ Browse to the plugin and select **Install plugin**.
 
 ### 🌱 CMS Cultivator
 
-38 Agent Skills and 17 specialist agents for Drupal and WordPress development. Skills activate automatically from natural language, or invoke explicitly.
+46 auto-invoked Agent Skills and 15 specialist agents for Drupal and WordPress development. Skills activate automatically from natural language, or invoke explicitly. Works in Claude Code, Claude Desktop, and OpenAI Codex.
 
 **Features:**
-- 🔄 PR Workflow - Commit messages, PR descriptions, changelogs, code review
+- 🔄 PR Workflow - Commit messages, PR descriptions, changelogs, code review (skills run directly — no orchestrator agent)
 - ♿ Accessibility - WCAG 2.1 AA compliance audits and fixes
 - ⚡ Performance - Core Web Vitals, query optimization, asset analysis
 - 🔒 Security - OWASP Top 10 scanning, dependency audits, vulnerability reports
@@ -59,6 +59,11 @@ Browse to the plugin and select **Install plugin**.
 - ✨ Code Quality - Standards enforcement, technical debt assessment
 - 📚 Documentation - API docs, user guides, changelogs
 - 🎨 Design Workflow - Figma to WordPress blocks and Drupal paragraphs
+- 📋 Project Planning - FRDs, story point estimation, Teamwork CSV backlogs
+- 🗂 PM Workflows - Client request triage, meeting prep, project heartbeats, full QA review (requires MCP servers)
+- 🧭 Strategy - Strategist-focused discovery audits with all 21 Laws of UX, content hierarchy, and presentation-ready reports (requires CoWork)
+- 🌐 Drupal.org Contribution - Issue and merge request workflows
+- 🚀 DevOps - Kanopi Drupal/Pantheon onboarding automation
 
 **Claude Code:**
 ```bash
@@ -95,26 +100,7 @@ Comprehensive developer analytics and productivity insights for Claude Code.
 
 ---
 
-### 📋 CMS Planner
-
-AI-powered project planning for web development. Generate comprehensive FRDs with story point estimates and Teamwork-ready CSV backlogs.
-
-**Features:**
-- 📋 Functional Requirements Documents - Executive summaries, technical specs, implementation plans
-- 📊 Story Point Estimation - Fibonacci sequence estimation (1-34+ points)
-- 📦 Teamwork Integration - CSV export with phase-based organization
-- 🏗️ Recipe-Based Architecture Support - Special handling for Drupal recipes
-- ⚠️ Risk Assessment - Technical and project risk identification
-- ✅ Success Criteria - Functional, technical, and business metrics
-
-**Claude Code:**
-```bash
-/plugin install cms-planner@claude-toolbox
-```
-
-**Documentation:** [https://kanopi.github.io/cms-planner/](https://kanopi.github.io/cms-planner/)
-
-**Repository:** [https://github.com/kanopi/cms-planner](https://github.com/kanopi/cms-planner)
+> **Note:** The `cms-planner` plugin has been deprecated. Its three planning skills (`frd-generator`, `story-point-estimator`, `csv-exporter`) are now native to **CMS Cultivator** as of v1.1.0 — install `cms-cultivator@claude-toolbox` to use them.
 
 ## Requirements
 
