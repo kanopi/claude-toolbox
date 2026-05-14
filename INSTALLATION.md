@@ -1,6 +1,8 @@
 # Installing from Claude Toolbox
 
-## Quick Start
+> **Platforms:** Claude Toolbox works in Claude Code, Claude Desktop, and OpenAI Codex. The steps below cover Claude Code; for Codex, see the [Codex Installation](#codex-installation) section.
+
+## Quick Start (Claude Code)
 
 ### Step 1: Open Claude Code
 
@@ -33,16 +35,61 @@ Inside Claude Code CLI:
 
 Select "Manage Plugins" to see `cms-cultivator` in your installed plugins list.
 
-### Step 5: Start Using Commands
+### Step 5: Start Using Skills
 
-Try some commands:
+CMS Cultivator skills activate automatically from natural language — no command syntax to remember:
+
+```
+"I'm ready to commit my changes"      → commit-message-generator
+"Is this button accessible?"          → accessibility-checker
+"This query is slow"                  → performance-analyzer
+"Does this follow Drupal standards?"  → code-standards-checker
+"Create a PR for my current branch"   → pr-create
+```
+
+You can also invoke skills explicitly:
 
 ```bash
-/pr-desc PROJ-123        # Generate PR description
-/a11y-audit              # Run accessibility audit
-/perf-analyze queries    # Analyze query performance
-/security-scan deps      # Scan dependencies
+/pr-create PROJ-123          # Create a PR with a generated description
+/audit-a11y                  # Run a comprehensive accessibility audit
+/audit-perf                  # Analyze Core Web Vitals
+/audit-security              # Scan for OWASP Top 10 vulnerabilities
+/audit-live-site             # Multi-dimensional audit (parallel specialists)
 ```
+
+In OpenAI Codex, use `@skill-name` instead of `/skill-name`.
+
+See the [Skills overview](https://kanopi.github.io/cms-cultivator/commands/overview/) for the full list of 46 skills.
+
+## Codex Installation
+
+For OpenAI Codex users:
+
+### Step 1: Add the Marketplace
+
+```bash
+codex plugin marketplace add kanopi/claude-toolbox
+```
+
+### Step 2: Open the Plugin Browser
+
+```bash
+codex/plugins
+```
+
+Browse to **CMS Cultivator** and select **Install plugin**.
+
+### Step 3: Invoke Skills
+
+In Codex, prefix skill names with `@` instead of `/`:
+
+```bash
+@pr-create PROJ-123
+@audit-a11y
+@audit-perf
+```
+
+Skills also activate automatically from natural language, the same as in Claude Code.
 
 ## Alternative Installation Methods
 
@@ -135,4 +182,4 @@ If commands are not available after installation:
 
 ---
 
-**Last Updated:** 2025-10-13
+**Last Updated:** 2026-05-14
