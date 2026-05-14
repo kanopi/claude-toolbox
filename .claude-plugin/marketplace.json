@@ -2,7 +2,7 @@
   "name": "claude-toolbox",
   "displayName": "Claude Toolbox",
   "description": "Official Claude Code toolbox from Kanopi Studios for Content Management System (CMS) development",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "owner": {
     "name": "Kanopi Studios",
     "email": "code@kanopi.com",
@@ -17,8 +17,8 @@
   "plugins": [
     {
       "name": "cms-cultivator",
-      "description": "Agent Skills and specialist agents for Drupal and WordPress development. Includes PR workflows, accessibility / performance / security / quality audits, design-to-code, Drupal.org contribution, Drupal/Pantheon DevOps, FRD generation with story points and CSV export, PM workflows (client triage, meeting prep, project heartbeats, QA review), and a strategist-focused UX audit covering the Laws of UX.",
-      "version": "1.2.0",
+      "description": "Agent Skills and specialist agents for Drupal and WordPress. PR workflows, accessibility / performance / security / quality audits, design-to-code, FRD generation with story points, CSV export, strategist UX audits, PM workflows, Drupal.org contribution, and Drupal/Pantheon DevOps.",
+      "version": "1.2.1",
       "source": {
         "source": "github",
         "repo": "kanopi/cms-cultivator"
