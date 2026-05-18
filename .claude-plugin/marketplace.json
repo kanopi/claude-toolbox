@@ -2,7 +2,7 @@
   "name": "claude-toolbox",
   "displayName": "Claude Toolbox",
   "description": "Official Claude Code toolbox from Kanopi Studios for Content Management System (CMS) development",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "owner": {
     "name": "Kanopi Studios",
     "email": "code@kanopi.com",
@@ -36,6 +36,17 @@
       },
       "homepage": "https://kanopi.github.io/claude-dev-insights/",
       "keywords": ["analytics", "session-tracking", "cost-management", "security", "code-quality", "productivity", "developer-insights", "hooks"]
+    },
+    {
+      "name": "cc-teamwork-token-count",
+      "description": "SessionStart hook that logs every Claude Code session to a JSONL file with git branch and parsed Teamwork task ID. Adds a /tw-token-count slash command that aggregates ccusage token spend per Teamwork task, with optional Teamwork MCP enrichment for task and project names.",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "kanopi/cc-teamwork-token-count"
+      },
+      "homepage": "https://github.com/kanopi/cc-teamwork-token-count",
+      "keywords": ["teamwork", "ccusage", "token-tracking", "session-logging", "hooks", "cost-tracking", "kanopi"]
     }
   ]
 }

@@ -100,6 +100,28 @@ Comprehensive developer analytics and productivity insights for Claude Code.
 
 ---
 
+### 🧾 CC Teamwork Token Count
+
+Tie every Claude Code session to a Teamwork task and report your ccusage token spend per task. Logs sessions on startup; aggregates by task on demand.
+
+**Features:**
+- 🪝 SessionStart hook — Logs every new session to `~/.claude/tw-session-log.jsonl` with session UUID, git branch, parsed Teamwork task ID, and cwd
+- 🧾 `/tw-token-count` command — Aggregates [ccusage](https://github.com/ryoppippi/ccusage) token spend per Teamwork task (cost, tokens, elapsed time, session list)
+- 📋 `--list` mode — Shows the last 10 logged Teamwork task IDs, enriched with task and project names when the Teamwork MCP is connected
+- 🌿 Branch-aware — Extracts the `tw<digits>` prefix from your current git branch automatically; no project config needed
+- 🔌 Optional Teamwork MCP — Enriches list output with task and project names; falls back gracefully when MCP isn't available
+
+**Requirements:** [`jq`](https://jqlang.github.io/jq/), `npx` (ships with Node.js), and `git`. The first ccusage invocation downloads it on demand via `npx -y ccusage@latest`.
+
+**Claude Code:**
+```bash
+/plugin install cc-teamwork-token-count@claude-toolbox
+```
+
+**Repository:** https://github.com/kanopi/cc-teamwork-token-count
+
+---
+
 > **Note:** The `cms-planner` plugin has been deprecated. Its three planning skills (`frd-generator`, `story-point-estimator`, `csv-exporter`) are now native to **CMS Cultivator** as of v1.1.0 — install `cms-cultivator@claude-toolbox` to use them.
 
 ## Requirements
