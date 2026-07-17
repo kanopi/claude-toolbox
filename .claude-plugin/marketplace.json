@@ -18,13 +18,28 @@
     {
       "name": "cms-cultivator",
       "description": "Agent Skills and specialist agents for Drupal and WordPress development. PR workflows, design-to-code (Figma → blocks/paragraphs) with responsive styling and real-browser validation, test scaffolding and coverage analysis, documentation generation, Drupal.org contribution workflows, Composer patch generation, and git worktree management.",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "source": {
         "source": "github",
         "repo": "kanopi/cms-cultivator"
       },
       "homepage": "https://kanopi.github.io/cms-cultivator/",
-      "keywords": ["Drupal", "WordPress", "cms", "ddev", "pr-workflow", "design-to-code", "figma", "responsive-design", "browser-validation", "testing", "documentation", "drupalorg", "composer", "worktree"]
+      "keywords": [
+        "Drupal",
+        "WordPress",
+        "cms",
+        "ddev",
+        "pr-workflow",
+        "design-to-code",
+        "figma",
+        "responsive-design",
+        "browser-validation",
+        "testing",
+        "documentation",
+        "drupalorg",
+        "composer",
+        "worktree"
+      ]
     },
     {
       "name": "delivery-record",
@@ -35,7 +50,15 @@
         "repo": "kanopi/delivery-record"
       },
       "homepage": "https://github.com/kanopi/delivery-record",
-      "keywords": ["delivery-record", "ai-governance", "provenance", "attestation", "human-in-the-loop", "json-schema", "sign-off"]
+      "keywords": [
+        "delivery-record",
+        "ai-governance",
+        "provenance",
+        "attestation",
+        "human-in-the-loop",
+        "json-schema",
+        "sign-off"
+      ]
     },
     {
       "name": "claude-dev-insights",
@@ -46,7 +69,16 @@
         "repo": "kanopi/claude-dev-insights"
       },
       "homepage": "https://kanopi.github.io/claude-dev-insights/",
-      "keywords": ["analytics", "session-tracking", "cost-management", "security", "code-quality", "productivity", "developer-insights", "hooks"]
+      "keywords": [
+        "analytics",
+        "session-tracking",
+        "cost-management",
+        "security",
+        "code-quality",
+        "productivity",
+        "developer-insights",
+        "hooks"
+      ]
     },
     {
       "name": "cc-teamwork-token-count",
@@ -57,7 +89,15 @@
         "repo": "kanopi/cc-teamwork-token-count"
       },
       "homepage": "https://github.com/kanopi/cc-teamwork-token-count",
-      "keywords": ["teamwork", "ccusage", "token-tracking", "session-logging", "hooks", "cost-tracking", "kanopi"]
+      "keywords": [
+        "teamwork",
+        "ccusage",
+        "token-tracking",
+        "session-logging",
+        "hooks",
+        "cost-tracking",
+        "kanopi"
+      ]
     }
   ]
 }
