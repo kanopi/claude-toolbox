@@ -2,7 +2,7 @@
   "name": "claude-toolbox",
   "displayName": "Claude Toolbox",
   "description": "Official Claude Code toolbox from Kanopi Studios for Content Management System (CMS) development",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "owner": {
     "name": "Kanopi Studios",
     "email": "code@kanopi.com",
@@ -17,14 +17,25 @@
   "plugins": [
     {
       "name": "cms-cultivator",
-      "description": "Agent Skills and specialist agents for Drupal and WordPress. PR workflows, accessibility / performance / security / quality audits, design-to-code, FRD generation with story points, CSV export, strategist UX audits, PM workflows, Drupal.org contribution, and Drupal/Pantheon DevOps.",
-      "version": "1.2.1",
+      "description": "Agent Skills and specialist agents for Drupal and WordPress development. PR workflows, design-to-code (Figma → blocks/paragraphs) with responsive styling and real-browser validation, test scaffolding and coverage analysis, documentation generation, Drupal.org contribution workflows, Composer patch generation, and git worktree management.",
+      "version": "2.0.0",
       "source": {
         "source": "github",
         "repo": "kanopi/cms-cultivator"
       },
       "homepage": "https://kanopi.github.io/cms-cultivator/",
-      "keywords": ["Drupal", "WordPress", "cms", "accessibility", "performance", "security", "ddev", "pr-workflow", "design-to-code", "figma", "frd", "story-points", "teamwork", "strategy", "ux-laws", "pm-workflows", "discovery"]
+      "keywords": ["Drupal", "WordPress", "cms", "ddev", "pr-workflow", "design-to-code", "figma", "responsive-design", "browser-validation", "testing", "documentation", "drupalorg", "composer", "worktree"]
+    },
+    {
+      "name": "delivery-record",
+      "description": "Schema-typed, human-signed Delivery Records for AI-assisted work. Generate a record for any significant output with a mandatory named-reviewer checkpoint, then verify records against the bundled JSON Schema spec with the threshold rule (fail needs a waiver, n/a needs a justification). MIT licensed.",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "kanopi/delivery-record"
+      },
+      "homepage": "https://github.com/kanopi/delivery-record",
+      "keywords": ["delivery-record", "ai-governance", "provenance", "attestation", "human-in-the-loop", "json-schema", "sign-off"]
     },
     {
       "name": "claude-dev-insights",
