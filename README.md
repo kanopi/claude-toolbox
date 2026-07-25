@@ -122,6 +122,25 @@ Tie every Claude Code session to a Teamwork task and report your ccusage token s
 
 ---
 
+### 🎬 Screencast Skills
+
+Author and produce narrated, captioned screencast tutorials for any tool — terminal, native app, or browser — on macOS. Two skills: script it, then record it.
+
+**Features:**
+- 📝 `screencast-storyboard` — reads the tool's real docs and drafts an approved storyboard (transcript + timeline); never fabricates config
+- 🎥 `screencast-tutorial-video` — records each scene with the right engine: VHS for terminals, ffmpeg still-motion for native apps, headless Playwright for the browser, command cards for abstract commands
+- 🗣️ Voice-over via ElevenLabs or OpenAI, a bottom caption bar, and 1920×1080 assembly
+- 🎨 Brand presets (`TUT_PRESET`) for house voice, pronunciation, and look
+
+**Claude Code:**
+```bash
+/plugin install screencast-skills@claude-toolbox
+```
+
+**Repository:** [https://github.com/kanopi/screencast-skills](https://github.com/kanopi/screencast-skills)
+
+---
+
 > **Note:** The `cms-planner` plugin has been deprecated. Its three planning skills (`frd-generator`, `story-point-estimator`, `csv-exporter`) are now native to **CMS Cultivator** as of v1.1.0 — install `cms-cultivator@claude-toolbox` to use them.
 
 ## Requirements
