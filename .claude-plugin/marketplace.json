@@ -2,7 +2,7 @@
   "name": "claude-toolbox",
   "displayName": "Claude Toolbox",
   "description": "Official Claude Code toolbox from Kanopi Studios for Content Management System (CMS) development",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "owner": {
     "name": "Kanopi Studios",
     "email": "code@kanopi.com",
@@ -101,7 +101,7 @@
     },
     {
       "name": "screencast-skills",
-      "description": "Author and produce narrated, captioned screencast tutorials for any tool on macOS. screencast-storyboard reads the tool's real docs and drafts an approved storyboard (never fabricating config); screencast-tutorial-video records each scene with the right engine — VHS for terminals, ffmpeg still-motion for native apps, headless Playwright for the browser, command cards for abstract commands — adds ElevenLabs or OpenAI voice-over, and assembles a 1920x1080 MP4. Brand presets set the house voice, pronunciation, and look.",
+      "description": "Author and produce narrated, captioned screencast tutorials for any tool on macOS. screencast-storyboard reads the tool's real docs and drafts an approved storyboard (never fabricating config); screencast-tutorial-video records each scene with the right engine: VHS for terminals, ffmpeg still-motion for native apps, headless Playwright for the browser, command cards for abstract commands. It adds ElevenLabs or OpenAI voice-over and assembles a 1920x1080 MP4. Brand presets set the house voice, pronunciation, and look.",
       "version": "1.0.0",
       "source": {
         "source": "github",

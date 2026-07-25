@@ -124,11 +124,11 @@ Tie every Claude Code session to a Teamwork task and report your ccusage token s
 
 ### 🎬 Screencast Skills
 
-Author and produce narrated, captioned screencast tutorials for any tool — terminal, native app, or browser — on macOS. Two skills: script it, then record it.
+Author and produce narrated, captioned screencast tutorials on macOS for any tool, whether a terminal, a native app, or a browser. Two skills: script it, then record it.
 
 **Features:**
-- 📝 `screencast-storyboard` — reads the tool's real docs and drafts an approved storyboard (transcript + timeline); never fabricates config
-- 🎥 `screencast-tutorial-video` — records each scene with the right engine: VHS for terminals, ffmpeg still-motion for native apps, headless Playwright for the browser, command cards for abstract commands
+- 📝 `screencast-storyboard` - reads the tool's real docs and drafts an approved storyboard (transcript + timeline); never fabricates config
+- 🎥 `screencast-tutorial-video` - records each scene with the right engine: VHS for terminals, ffmpeg still-motion for native apps, headless Playwright for the browser, command cards for abstract commands
 - 🗣️ Voice-over via ElevenLabs or OpenAI, a bottom caption bar, and 1920×1080 assembly
 - 🎨 Brand presets (`TUT_PRESET`) for house voice, pronunciation, and look
 
