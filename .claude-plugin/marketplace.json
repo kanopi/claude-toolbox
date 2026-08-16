@@ -17,8 +17,8 @@
   "plugins": [
     {
       "name": "cms-cultivator",
-      "description": "Agent Skills and specialist agents for Drupal and WordPress development. PR workflows with evidence-filtered code review, local DDEV site operation, coding standards discovered from the project's own scripts, design-to-code (Figma → blocks/paragraphs) with responsive styling and real-browser validation, test scaffolding and coverage analysis, documentation generation, Drupal.org contribution workflows, Composer patch generation, and git worktree management.",
-      "version": "2.2.0",
+      "description": "Agent Skills and specialist agents for Drupal and WordPress development. PR workflows with evidence-filtered code review, local DDEV site operation and Docker disk cleanup, coding standards discovered from the project's own scripts, design-to-code (Figma → blocks/paragraphs) with responsive styling and real-browser validation, test scaffolding and coverage analysis, documentation generation, Drupal.org contribution workflows, Composer patch generation, and git worktree management.",
+      "version": "2.3.0",
       "source": {
         "source": "github",
         "repo": "kanopi/cms-cultivator"
