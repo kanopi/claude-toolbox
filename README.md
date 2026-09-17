@@ -48,22 +48,19 @@ Browse to the plugin and select **Install plugin**.
 
 ### 🌱 CMS Cultivator
 
-46 auto-invoked Agent Skills and 15 specialist agents for Drupal and WordPress development. Skills activate automatically from natural language, or invoke explicitly. Works in Claude Code, Claude Desktop, and OpenAI Codex.
+26 auto-invoked Agent Skills and 8 specialist agents for Drupal and WordPress development. Skills activate automatically from natural language, or invoke explicitly. Works in Claude Code, Claude Desktop, and OpenAI Codex.
 
 **Features:**
-- 🔄 PR Workflow - Commit messages, PR descriptions, changelogs, code review (skills run directly — no orchestrator agent)
-- ♿ Accessibility - WCAG 2.1 AA compliance audits and fixes
-- ⚡ Performance - Core Web Vitals, query optimization, asset analysis
-- 🔒 Security - OWASP Top 10 scanning, dependency audits, vulnerability reports
-- 🧪 Testing - Test scaffolding, coverage analysis, QA test plans
-- ✨ Code Quality - Standards enforcement, technical debt assessment
+- 🔄 PR Workflow - Commit messages with `Assisted-by` trailers, PR descriptions, evidence-filtered code review, release changelogs
+- 🐳 Local Development - DDEV site operation from a fresh clone, database refreshes, theme builds, e2e suites, Docker disk cleanup
+- ✨ Coding Standards - PHPCS, PHPStan, ESLint, and stylelint commands discovered from the project's own composer and npm scripts
+- 🎨 Design Workflow - Figma to WordPress block patterns and Drupal paragraph types, with responsive styling and real-browser validation
+- 🧪 Testing - Test scaffolding, QA test plans, coverage analysis
 - 📚 Documentation - API docs, user guides, changelogs
-- 🎨 Design Workflow - Figma to WordPress blocks and Drupal paragraphs
-- 📋 Project Planning - FRDs, story point estimation, Teamwork CSV backlogs
-- 🗂 PM Workflows - Client request triage, meeting prep, project heartbeats, full QA review (requires MCP servers)
-- 🧭 Strategy - Strategist-focused discovery audits with all 21 Laws of UX, content hierarchy, and presentation-ready reports (requires CoWork)
 - 🌐 Drupal.org Contribution - Issue and merge request workflows
-- 🚀 DevOps - Kanopi Drupal/Pantheon onboarding automation
+- 🧩 Drupal SDC - Single Directory Component and Twig best practices
+- 📦 Composer Patches - Generate and maintain patches for contrib and vendor packages
+- 🌿 Worktrees - Parallel ticket work with DDEV isolation
 
 **Claude Code:**
 ```bash
@@ -75,6 +72,26 @@ Browse to the plugin and select **Install plugin**.
 **Documentation:** [https://kanopi.github.io/cms-cultivator/](https://kanopi.github.io/cms-cultivator/)
 
 **Repository:** [https://github.com/kanopi/cms-cultivator](https://github.com/kanopi/cms-cultivator)
+
+---
+
+### ✍️ Delivery Record
+
+Schema-typed, human-signed Delivery Records for AI-assisted work. A record cannot be written without a named human reviewer and the two checkpoint notes, so it never asserts that unreviewed work is done.
+
+**Features:**
+- 📝 `delivery-record` - generate a record for code, FRDs, audits, discovery, design handoffs, QA, launches, and more
+- ✅ `delivery-record-verify` - validate a record against the bundled JSON Schema, enforcing the threshold rule (a fail needs a waiver, an n/a needs a justification)
+- 🔗 Indexes each record in the project's Teamwork "Delivery Records" notebook
+
+**Claude Code:**
+```bash
+/plugin install delivery-record@claude-toolbox
+```
+
+**OpenAI Codex:** Install via `codex/plugins` after adding this marketplace.
+
+**Repository:** [https://github.com/kanopi/delivery-record](https://github.com/kanopi/delivery-record)
 
 ---
 
@@ -141,7 +158,29 @@ Author and produce narrated, captioned screencast tutorials on macOS for any too
 
 ---
 
-> **Note:** The `cms-planner` plugin has been deprecated. Its three planning skills (`frd-generator`, `story-point-estimator`, `csv-exporter`) are now native to **CMS Cultivator** as of v1.1.0 — install `cms-cultivator@claude-toolbox` to use them.
+### 🪤 CANT
+
+The Catalog of Agent Neutralization Techniques: a named, evidence-backed catalog of the rationalizations AI agents use to break their own rules.
+
+**Features:**
+- 📓 Ships `cant.yaml`, the machine-readable catalog of 28 named techniques
+- 🎯 `cant-evals` - maps a skill's behavioral promises to technique IDs and generates CANT-tagged gate and pressure cases
+- 🔖 Gives reviews and skill files a shared vocabulary, so "CANT-24" replaces re-describing the same failure
+
+**Claude Code:**
+```bash
+/plugin install cant@claude-toolbox
+```
+
+**OpenAI Codex:** Install via `codex/plugins` after adding this marketplace.
+
+**Documentation:** [https://kanopi.github.io/cant/](https://kanopi.github.io/cant/)
+
+**Repository:** [https://github.com/kanopi/cant](https://github.com/kanopi/cant)
+
+---
+
+> **Note:** The `cms-planner` plugin has been deprecated. Its three planning skills (`frd-generator`, `story-point-estimator`, `csv-exporter`) now live in Kanopi's internal `pm-skills` plugin.
 
 ## Requirements
 
