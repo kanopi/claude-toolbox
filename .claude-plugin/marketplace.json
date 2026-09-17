@@ -2,7 +2,7 @@
   "name": "claude-toolbox",
   "displayName": "Claude Toolbox",
   "description": "Official Claude Code toolbox from Kanopi Studios for Content Management System (CMS) development",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "owner": {
     "name": "Kanopi Studios",
     "email": "code@kanopi.com",
@@ -121,6 +121,25 @@
         "elevenlabs",
         "openai",
         "documentation"
+      ]
+    },
+    {
+      "name": "cant",
+      "description": "The Catalog of Agent Neutralization Techniques (CANT): a named, evidence-backed catalog of the rationalizations AI agents use to break their own rules. Ships the machine-readable catalog (cant.yaml) plus a skill that maps a skill's behavioral promises to technique IDs and generates CANT-tagged gate and pressure cases for a behavioral eval harness.",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "kanopi/cant"
+      },
+      "homepage": "https://kanopi.github.io/cant/",
+      "keywords": [
+        "evals",
+        "behavioral-evals",
+        "cant",
+        "neutralization",
+        "rationalization",
+        "safety",
+        "skill-authoring"
       ]
     }
   ]
